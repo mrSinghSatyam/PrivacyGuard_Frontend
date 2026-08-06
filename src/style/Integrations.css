@@ -1,0 +1,209 @@
+/* PAGE LAYOUT */
+.integrations-page {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+  text-align: left;
+}
+
+.integrations-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.integrations-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* FILTER BAR IN ONE LINE */
+.integrations-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* GRID OF SMALL CARDS */
+.integrations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* CARD */
+.integration-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 14px 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.integration-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* TOP AREA */
+.integration-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.integration-main {
+  display: flex;
+  gap: 10px;
+}
+
+.integration-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.integration-icon-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.integration-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.integration-description {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* META INFO LINE */
+.integration-meta {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+.meta-pill {
+  background-color: #ecfdf5;
+  color: #15803d;
+  border-radius: 999px;
+  padding: 2px 6px;
+}
+
+/* 🚀 UPDATED STATUS PILL → SMALL & CLEAN */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px !important;
+  border-radius: 999px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600;
+}
+
+.status-connected {
+  background-color: #dcfce7 !important; /* light green */
+  color: #166534 !important;            /* dark green */
+}
+
+.status-disconnected {
+  background-color: #fee2e2 !important; /* light red */
+  color: #b91c1c !important;            /* dark red */
+}
+
+/* SCOPES LIST */
+.integration-scopes {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.scope-chip {
+  font-size: 0.72rem;
+  padding: 3px 6px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #4b5563;
+}
+
+.scope-chip-more {
+  background-color: #f3f4f6;
+}
+
+/* BUTTONS */
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 8px 14px;
+  transition: background-color 0.18s ease, transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* 🟢 CONNECT = GREEN (updated) */
+.btn-connect {
+  background-color: #16a34a !important; /* GREEN */
+  color: white !important;
+}
+.btn-connect:hover {
+  background-color: #15803d !important;
+}
+
+/* 🔴 DISCONNECT = RED */
+.btn-disconnect {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+}
+.btn-disconnect:hover {
+  background-color: #b91c1c !important;
+}
+
+/* ACTIONS ROW */
+.integration-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* PAGINATION */
+.integrations-pagination {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-info {
+  font-size: 0.85rem;
+  color: #6b7280;
+}

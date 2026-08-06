@@ -1,0 +1,89 @@
+/* Page container */
+.consent-page {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+  text-align: left;
+}
+
+/* Heading */
+.consent-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Warning text */
+.consent-warning {
+  color: #dc2626;
+}
+
+/* Grid of small cards */
+.consent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Card */
+.consent-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+/* Text side */
+.consent-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.consent-service {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.consent-permissions {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Base button */
+.consent-btn {
+  border: none;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+/* ✅ Allowed = green pill */
+.consent-btn.allowed {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+/* ✅ Blocked for ALL services = red & bigger */
+.consent-btn.blocked {
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 1rem;       /* bigger font */
+  padding: 8px 18px;     /* bigger button */
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* Hover effect */
+.consent-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}

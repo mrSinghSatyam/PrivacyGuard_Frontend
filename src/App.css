@@ -1,0 +1,40 @@
+/* Reset basic page layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Global body style */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Root should use full width & act as layout container */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: wrapper you can use around your Routes */
+.app-layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main page content (between navbar and footer) */
+.main-content {
+  flex: 1;
+}
+
+/* 🔴 Remove old .logo / .card / .read-the-docs from Vite template
+   because they can clash with your Navbar .logo */

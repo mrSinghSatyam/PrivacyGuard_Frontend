@@ -1,0 +1,47 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e63946;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Nav Links */
+.links {
+  display: flex;
+  gap: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;       /* Permanent bold black text */
+  font-weight: bold; /* Permanent bold text */
+  padding: 5px 0;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+/* Hover */
+.links a:hover {
+  color: #e63946;
+}
+
+/* 🔵 Active Page */
+.links .active {
+  color: blue;
+  border-bottom: 2px solid blue;  /* Blue underline only for active */
+}
